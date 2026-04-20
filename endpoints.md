@@ -61,6 +61,9 @@
 * [/api/3/user](moduly/user.md)
 * [/api/3/user/student-at-school](moduly/student_at_school.md)
 * [/api/3/webmodule](moduly/web.md)
+* /api/3/emergency/startemergency
+* /api/3/emergency/configuration
+* /api/3/emergency/participantsselection
 
 ## Další odkazy
 
