@@ -45,6 +45,7 @@
 * /api/3/marking/atoms
 * /api/3/marking/marks/$ID
 * [/api/3/marks](moduly/marks.md)
+* [/api/3/marks/SetClassificationConfirmation](moduly/marks_confirm.md)
 * [/api/3/marks/count-new](moduly/marks_new.md)
 * [/api/3/marks/final](moduly/marks_final.md)
 * [/api/3/marks/measures](moduly/marks_measures.md)
