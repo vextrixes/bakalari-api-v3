@@ -5,6 +5,8 @@
 * [/api/3/absence/student](moduly/absence.md)
 * /api/3/classbook
 * /api/3/classbook/lessonTags
+* /api/3/classbook/{lessonId}/absence
+* /api/3/classbook/{recordId}
 * [/api/3/events](moduly/events.md)
 * [/api/3/events/my](moduly/events.md)
 * [/api/3/events/public](moduly/events.md)
