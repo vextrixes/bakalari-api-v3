@@ -21,6 +21,10 @@
 * [/api/3/komens/message](moduly/komens_send.md)
 * [/api/3/komens/message/$ID](moduly/komens.md)
 * [/api/3/komens/message/$ID/mark-as-read](moduly/komens.md)
+* /api/3/komens/message/$ID/mark-as-hidden
+* /api/3/komens/message/$ID/mark-as-unhidden
+* /api/3/komens/message/$ID/mark-as-confirmed
+* /api/3/komens/message/$ID/mark-as-unhidden
 * [/api/3/komens/message-types](moduly/komens_message-types.md)
 * [/api/3/komens/message-types/edit](moduly/komens_message-types.md)
 * [/api/3/komens/message-types/reply](moduly/komens_message-types.md)
