@@ -11,107 +11,151 @@ Content-Type: application/x-www-form-urlencoded
 
 ## Odpověď
 
-API ```3.14.0```
+API ```3.43.0```
 ```200 OK```
 
-```json
+```jsonc
 {
-  "UserUID":"1234/moje_id",
-  "CampaignCategoryCode":"xxxxxxxxxxxxxxx_viz_níže_xxxxxxxxxxxxxxx",
-  "Class":{
-    "Id":"XL",
-    "Abbrev":"X.A",
-    "Name":"X. A" // nebo také prázdné!
+  "UserUID": "1234/moje_id",
+  "CampaignCategoryCode": "xxxxxxxxxxxxxxx_viz_níže_xxxxxxxxxxxxxxx",
+  "Class": {
+    "Id": "XL",
+    "Abbrev": "X.A",
+    "Name": "X.A" // nebo také prázdné!
   },
-  "FullName":"Příjmení Jméno, X.A",
-  "SchoolOrganizationName":"škola",
-  "SchoolType":null,
-  "UserType":"parents",
-  "UserTypeText":"rodič",
-  "StudyYear":1,
-  "EnabledModules":[
+  "TeacherClasses": null,
+  "FullName": "Příjmení Jméno, X.A",
+  "SchoolOrganizationName": "název školy",
+  "SchoolType": "BasicSchool", // Někdy null
+  "UserType": "parents", // Možnosti "student", "parents", "teacher"
+  "UserTypeText": "rodič",
+  "StudyYear": 1,
+  "EnabledModules": [ 
     {
-      "Module":"Komens",
-      "Rights":[
+      "Module": "Komens",
+      "Rights": [
         "ShowReceivedMessages",
         "ShowSentMessages",
         "ShowNoticeBoardMessages",
+        "SaveConcept",
+        "ShowConcepts",
         "SendMessages",
         "ShowRatingDetails",
         "SendAttachments"
       ]
     },
     {
-      "Module":"Absence",
-      "Rights":[
+      "Module": "Absence",
+      "Rights": [
         "ShowAbsence",
         "ShowAbsencePercentage"
       ]
     },
     {
-      "Module":"Events",
-      "Rights":[
+      "Module": "Events",
+      "Rights": [
         "ShowEvents"
       ]
     },
     {
-      "Module":"Marks",
-      "Rights":[
-        "ShowMarks",
+      "Module": "Marks",
+      "Rights": [
         "ShowFinalMarks",
+        "ShowManners",
+        "ShowMarks",
         "PredictMarks"
       ]
     },
     {
-      "Module":"Timetable",
-      "Rights":[
+      "Module": "Timetable",
+      "Rights": [
         "ShowTimetable"
       ]
     },
     {
-      "Module":"Substitutions",
-      "Rights":[
+      "Module": "Substitutions",
+      "Rights": [
         "ShowSubstitutions"
       ]
     },
     {
-      "Module":"Subjects",
-      "Rights":[
+      "Module": "Subjects",
+      "Rights": [
         "ShowSubjects",
         "ShowSubjectThemes"
       ]
     },
     {
-      "Module":"Homeworks",
-      "Rights":[
+      "Module": "Homeworks",
+      "Rights": [
         "ShowHomeworks"
       ]
     },
     {
-      "Module":"Gdpr",
-      "Rights":[
+      "Module": "Gdpr",
+      "Rights": [
         "ShowOwnConsents",
         "ShowChildConsents",
         "ShowCommissioners"
       ]
     },
     {
-      "Module":"Campaign",
-      "Rights":[
+      "Module": "Campaign",
+      "Rights": [
         "ShowCampaign"
+      ]
+    },
+    {
+      "Module": "AccessSystem",
+      "Rights": [
+        "CanShowStudentPresentAtSchool"
       ]
     }
   ],
-  "SettingModules":{
-    "Common":{
-      "$type":"CommonModuleSettings",
-      "ActualSemester":{
-        "SemesterId":"2",
-        "From":"2020-01-04T00:00:00+01:00",
-        "To":"2020-07-14T23:59:59+02:00"
+  "SettingModules": {
+    "Komens": {
+      "$type": "KomensModuleSettings",
+      "UploadFolderVerified": true,
+      "CurrentSchoolYearStartDate": "2025-08-20T00:00:00+02:00"
+    },
+    "Marking": {
+      "$type": "MarksModuleSettings",
+      "RequiredClassificationConfirmation": true,
+      "ClassificationConfirmationClassesList": [],
+      "ClassificationConfirmationNotification": true,
+      "NumberOfDaysClassificationConfirmationNotifications": 14
+    },
+    "Homeworks": {
+      "$type": "HomeworksModuleSettings",
+      "UploadFolderVerified": true
+    },
+    "Common": {
+      "$type": "CommonModuleSettings",
+      "ActualSemester": {
+        "SemesterId": "2",
+        "From": "2026-01-04T00:00:00+01:00",
+        "To": "2026-07-14T23:59:59+02:00"
       }
+    },
+    "Emergency": {
+      "$type": "EmergencyModuleSettings",
+      "FirestoreDbName": "production",
+      "EmergencyServerUrl": "https://emergency.service.bakalari.cz"
     }
-  }
+  },
+  "FullUserName": "Příjmení Jméno",
+  "Students": [
+    {
+      "FullName": "Příjmení Jméno, X.A",
+      "Class": {
+        "Id": "XL",
+        "Abbrev": "X.A",
+        "Name": "X. A" // nebo také prázdné!
+      },
+      "SchoolType": "BasicSchool",
+      "StudyYear": 1
+    }
+  ]
 }
 ```
 
