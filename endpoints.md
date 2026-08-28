@@ -47,6 +47,11 @@
 * [/api/3/payments/classfund](moduly/payments.md#seznam-plateb)
 * [/api/3/payments/classfund/paymentsinfo](moduly/payments.md#vložit-peníze)
 * [/api/3/payments/classfund/summary](moduly/payments.md#celkový-stav-fondu)
+* /api/3/payments/classfund/teacher/documents/$classId
+* /api/3/payments/regularpayments
+* /api/3/payments/regularpayments/summary
+* /api/3/payments/regularpayments/teacher/prescriptions/$prescriptionId
+* /api/3/payments/regularpayments/teacher/prescriptions/$prescriptionId/students
 * /api/3/register-notification
 * [/api/3/subjects](moduly/subjects.md)
 * [/api/3/subjects/themes/$ID](moduly/themes.md)
