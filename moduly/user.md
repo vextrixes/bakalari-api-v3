@@ -26,7 +26,7 @@ API ```3.43.0```
   "TeacherClasses": null,
   "FullName": "Příjmení Jméno, X.A",
   "SchoolOrganizationName": "název školy",
-  "SchoolType": "BasicSchool", // Někdy null. Pravděpodobné možnosti "BasicSchool", "SecondarySchool", "VocationalSchool, "PracticalSchool"
+  "SchoolType": "BasicSchool", // Někdy null. Pravděpodobné možnosti "BasicSchool", "SecondarySchool", "VocationalSchool, "PracticalSchool", "TechnicalSchool", "AbsentSchool", "OtherSchool", "BasicSpecialSchool", "HigerProfessionalSchool", "BasicArtSchool", "BasicPracticalSchool", "SecondaryVocationalSchool", "MunicipalitySchool"
   "UserType": "parents", // Možnosti "student", "parents", "teacher"
   "UserTypeText": "rodič",
   "StudyYear": 1,
